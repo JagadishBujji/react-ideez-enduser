@@ -7,13 +7,8 @@ const Home = () => {
       <Navbar />
       {/* <Sidebar/> */}
       <div className="out container-fluid">
-        <div className="container pl-5 mb-3">
-          <h1>Job Post</h1>
-        </div>
-
         <Outlet />
       </div>
-      
     </>
   );
 };

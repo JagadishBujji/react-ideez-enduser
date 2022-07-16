@@ -14,15 +14,17 @@ const JobPosts = () => {
         <div className="col-md-3 jobsearch">
           <Profile />
         </div>
-        <div className="col-md-6 post-card">
+        <div className="col-md-6 ">
           <h1 className="px-5 py-3 title">Job Post</h1>
           <Search />
-          <JobPostCard />
-          <JobPostCard />
-          <JobPostCard />
-          <JobPostCard />
-          <JobPostCard />
-          <JobPostCard />
+          <div className="post-card">
+            <JobPostCard />
+            <JobPostCard />
+            <JobPostCard />
+            <JobPostCard />
+            <JobPostCard />
+            <JobPostCard />
+          </div>
         </div>
         <div className="col-md-3 jobsearch">
           <JobFilter />

@@ -35,7 +35,7 @@ a {
   left: 0;
   z-index: 1030;
   box-shadow: 0px 5px 14px 0px #ccc;
-  background: #fff;
+  background: #eeb5ebbf;
 }
 
 .sidebar {
@@ -421,10 +421,10 @@ a {
   margin-bottom: 15px;
 }
 
-/* .post-card {
+.post-card {
   max-height: 900px;
   overflow: auto;
-} */
+}
 
 .post-card::-webkit-scrollbar {
   width: 5px;

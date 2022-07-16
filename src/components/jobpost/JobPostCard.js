@@ -6,19 +6,19 @@ import EditModal from "../../Reuseable/EditModal";
 
 const JobPostCard = () => {
   const apply = {
-    background: "#c26dbc",
+    background: "#eeb5eb",
     color: "#fff",
-    border: "1px solid #c26dbc",
+    border: "1px solid #eeb5eb",
     fontSize: "14px",
-    "&:hover": {
-      border: "1px solid #c26dbc",
-      color: "#c26dbc",
-    },
+    // "&:hover": {
+    //   border: "1px solid #eeb5eb",
+    //   color: "#eeb5eb",
+    // },
   };
   const save = {
     background: "#fff",
     color: "#c26dbc",
-    border: "1px solid #c26dbc",
+    border: "1px solid #eeb5eb",
     fontSize: "14px",
     "&:hover": {
       border: "1px solid #c26dbc",

@@ -3,18 +3,23 @@ const JobLocation = () => {
     <>
       <div className="card jobfilter ">
         <div className="row job-filter">
-          <p className="job"> Job Location</p>
+          <p className="job m-0"> Job Location</p>
           <a href="/">Clear all</a>
         </div>
         <form className="exper-input" action="/action_page.php">
-          <input
-            type="checkbox"
-            className="mr-2"
-            id="vehicle1"
-            name="vehicle1"
-            value="Bike"
-          />
-          <label for="vehicle1"> On Site</label>
+          <div className="row filters">
+            <div>
+              <input
+                type="checkbox"
+                className="mr-2"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike"
+              />
+              <label for="vehicle1"> On Site</label>
+            </div>
+            <p className="m-0">123 Jobs</p>
+          </div>
 
           {/* search */}
           <form className="joblocation" action="submit">
@@ -27,24 +32,20 @@ const JobLocation = () => {
                 placeholder="Search Location"
               />
             </div>
-            {/* <button className="sea" type="submit">
-              Search
-            </button> */}
           </form>
-
-          <input
-            type="checkbox"
-            className="mr-2"
-            id="vehicle3"
-            name="vehicle3"
-            value="Boat"
-          />
-          <label for="vehicle3"> Remote</label>
-
-          {/* <p>256 jobs</p> */}
-          <br />
-          <br />
-          {/* <input type="submit" value="Submit" /> */}
+          <div className="row filters">
+            <div>
+              <input
+                type="checkbox"
+                className="mr-2"
+                id="vehicle3"
+                name="vehicle3"
+                value="Boat"
+              />
+              <label for="vehicle3"> Remote</label>
+            </div>
+            <p className="m-0">123 Jobs</p>
+          </div>
         </form>
       </div>
     </>

@@ -414,10 +414,17 @@ a {
   font-size: 16px;
 }
 
-.post-card {
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* .post-card {
   max-height: 900px;
   overflow: auto;
-}
+} */
 
 .post-card::-webkit-scrollbar {
   width: 5px;
@@ -435,16 +442,30 @@ a {
   background: #ccc;
 }
 
+.jobsearch {
+  margin-top: 5.5rem;
+}
+
+.job {
+  color: #eeb5eb;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
 .jobfilter {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%), 0 1px 2px 0 rgb(0 0 0 / 10%),
+    0 2px 1px -2px rgb(0 0 0 / 20%);
 }
 
 .job-filter {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .search {
@@ -453,6 +474,8 @@ a {
   padding: 15px 15px;
   margin-bottom: 25px;
   border-radius: 10px;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%), 0 1px 2px 0 rgb(0 0 0 / 10%),
+    0 2px 1px -2px rgb(0 0 0 / 20%);
 }
 
 .exper-input {
@@ -512,11 +535,13 @@ section {
   font-weight: 600;
   cursor: pointer;
   border-radius: 10px;
+  margin-left: 10px;
 }
 .sea:hover {
-  border: 2px solid #eeb5eb;
+  border: 1px solid #eeb5eb;
   color: #eeb5eb;
   background-color: transparent;
+  margin-left: 10px;
 }
 
 .joblocation {

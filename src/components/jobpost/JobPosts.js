@@ -1,39 +1,25 @@
+import Applicant from "../../Reuseable/Applicant";
 import Experience from "../../Reuseable/Experience";
 import JobFilter from "../../Reuseable/JobFilter";
 import JobLocation from "../../Reuseable/JobLocation";
+import JobType from "../../Reuseable/JobType";
+import Search from "../../Reuseable/Search/Search";
 import JobPostCard from "./JobPostCard";
 
 const JobPosts = () => {
   return (
     <>
       <div className="row">
-        <div className="col-md-3"></div>
-        <div className="col-md-6 post-card">
-          <h1 className="px-5 py-3">Job Post</h1>
-          <div className="container-fluid search px-5 py-5">
-            <h2>Search Jobs</h2>
-            <section>
-              <form className="form" action="submit">
-                <label class="head-jobs" for="search">
-                  Jobs
-                  <br /> Search?
-                </label>
-                <div class="search-container">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <input
-                    type="text"
-                    name="search"
-                    id="search"
-                    placeholder="skills, Companies...."
-                  />
-                </div>
-                <button className="sea" type="submit">
-                  Search
-                </button>
-              </form>
-            </section>
-            {/* <p>55 jobs</p> */}
+        <div className="col-md-3">
+          <div className="card">
+            <img src="" alt="" />
+            <p>Jagadish Kumar</p>
+            <p>UI/UX Desiner</p>
           </div>
+        </div>
+        <div className="col-md-6 post-card">
+          <h1 className="px-5 py-3 title">Job Post</h1>
+          <Search />
           <JobPostCard />
           <JobPostCard />
           <JobPostCard />
@@ -41,10 +27,12 @@ const JobPosts = () => {
           <JobPostCard />
           <JobPostCard />
         </div>
-        <div className="col-md-3 mt-5">
+        <div className="col-md-3 jobsearch">
           <JobFilter />
           <Experience />
           <JobLocation />
+          <JobType />
+          <Applicant />
         </div>
       </div>
     </>

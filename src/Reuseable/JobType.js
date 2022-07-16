@@ -1,12 +1,12 @@
-const Experience = () => {
+const JobType = () => {
   return (
     <>
       <div className="card jobfilter ">
         <div className="row job-filter">
-          <p className="job m-0"> Experience</p>
+          <p className="job m-0"> Job Type</p>
           <a href="/">Clear all</a>
         </div>
-        <form className="exper-input" action="/action_page.php">
+        <form className="exper-input">
           <div className="row filters">
             <div>
               <input
@@ -18,9 +18,10 @@ const Experience = () => {
               />
               <label className="m-0" for="vehicle1">
                 {" "}
-                Entry Level
+                Full Time
               </label>
             </div>
+
             <p className="m-0">123 Jobs</p>
           </div>
 
@@ -29,15 +30,16 @@ const Experience = () => {
               <input
                 type="checkbox"
                 className="mr-2"
-                id="vehicle2"
-                name="vehicle2"
-                value="Car"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike"
               />
-              <label className="m-0" for="vehicle2">
+              <label className="m-0" for="vehicle1">
                 {" "}
-                Intermediate
+                Freelance
               </label>
             </div>
+
             <p className="m-0">123 Jobs</p>
           </div>
 
@@ -46,11 +48,14 @@ const Experience = () => {
               <input
                 type="checkbox"
                 className="mr-2"
-                id="vehicle3"
-                name="vehicle3"
-                value="Boat"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike"
               />
-              <label for="vehicle3"> Expert</label>
+              <label className="m-0" for="vehicle1">
+                {" "}
+                Part Time
+              </label>
             </div>
             <p className="m-0">123 Jobs</p>
           </div>
@@ -60,4 +65,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default JobType;

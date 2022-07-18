@@ -10,16 +10,18 @@ const JobPostCard = () => {
     color: "#fff",
     border: "1px solid #eeb5eb",
     fontSize: "14px",
-    // "&:hover": {
-    //   border: "1px solid #eeb5eb",
-    //   color: "#eeb5eb",
-    // },
+    fontWeight: "600",
+    "&:hover": {
+      background: "#eeb5eb",
+      color: "#fff",
+    },
   };
   const save = {
     background: "#fff",
     color: "#c26dbc",
     border: "1px solid #eeb5eb",
     fontSize: "14px",
+    fontWeight: "600",
     "&:hover": {
       border: "1px solid #c26dbc",
       color: "#c26dbc",

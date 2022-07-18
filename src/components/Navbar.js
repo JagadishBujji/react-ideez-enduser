@@ -15,7 +15,9 @@ const Navbar = () => {
             </button> */}
           <a class="navbar-brand" href="#/">
             {/* <img src="images/logo.png" alt="" class="Logo-img"  /> */}
-            <h1>IDEEZ</h1>
+            <h1>
+              <b>IDEEZ</b>
+            </h1>
           </a>
 
           <button
@@ -37,19 +39,19 @@ const Navbar = () => {
               <li class="nav-item">
                 <Link class="nav-link font px-4" to="job-post">
                   <i class="fas fa-briefcase mr-3"></i>
-                  Job Post
+                  <b>Jobs</b>
                 </Link>
               </li>
               <li class="nav-item">
                 <Link class="nav-link  about-nav px-4" to="event-post">
                   <i class="fas fa-calendar mr-3"></i>
-                  Event Post
+                  <b>Events</b>
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link   px-4" to="">
+                <Link class="nav-link   px-4" to="user-profile">
                   <i class="fas fa-user mr-3"></i>
-                  profile
+                  <b>Profile</b>
                 </Link>
               </li>
             </ul>

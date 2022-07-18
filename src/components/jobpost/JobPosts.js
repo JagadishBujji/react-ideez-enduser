@@ -4,6 +4,7 @@ import JobFilter from "../../Reuseable/JobFilter";
 import JobLocation from "../../Reuseable/JobLocation";
 import JobType from "../../Reuseable/JobType";
 import Profile from "../../Reuseable/profile/Profile";
+import WorkExperience from "../../Reuseable/profile/WorkExperience";
 import Search from "../../Reuseable/Search/Search";
 import JobPostCard from "./JobPostCard";
 
@@ -13,9 +14,10 @@ const JobPosts = () => {
       <div className="row">
         <div className="col-md-3 jobsearch">
           <Profile />
+          <WorkExperience />
         </div>
         <div className="col-md-6 ">
-          <h1 className="px-5 py-3 title">Job Post</h1>
+          {/* <h1 className="px-5 py-3 title">Job Post</h1> */}
           <Search />
           <div className="post-card">
             <JobPostCard />

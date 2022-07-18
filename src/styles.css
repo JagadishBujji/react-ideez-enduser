@@ -82,7 +82,7 @@ a {
 }
 
 .out {
-  padding-top: 60px;
+  padding-top: 100px;
   background-color: #f4fafc;
   /* height: 100vh; */
 }
@@ -423,12 +423,19 @@ a {
 
 .post-card {
   max-height: 900px;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .post-card::-webkit-scrollbar {
-  width: 5px;
+  display: none;
 }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.post-card {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .post-card::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
@@ -445,7 +452,7 @@ a {
 /* profile */
 
 .profile-card {
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%), 0 1px 2px 0 rgb(0 0 0 / 10%),
     0 2px 1px -2px rgb(0 0 0 / 20%);
   margin-bottom: 15px;
@@ -472,10 +479,100 @@ a {
   color: #fff;
 }
 
+.work-experience {
+  display: flex;
+  align-items: center;
+}
+
+.workexperience-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.Edit-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.job-button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-section {
+  margin: 30px;
+  padding: 30px;
+}
+
+.profilelogo {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+}
+
+.profile-edit {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.edit-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tel-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.download-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.delete {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 20px;
+  border: 1px dashed #000;
+}
+
 /* profile end */
 
 .jobsearch {
-  margin-top: 5.5rem;
+  margin-top: 0;
 }
 
 .job {
@@ -511,7 +608,7 @@ a {
 }
 
 .exper-input {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 section {
@@ -646,7 +743,7 @@ section {
     width: 100%;
   }
   .out {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
   /* .welcome-container {

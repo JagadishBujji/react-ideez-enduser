@@ -1,3 +1,4 @@
+import Education from "../../Reuseable/profile/Education";
 import EmploymentExperience from "../../Reuseable/profile/EmploymentExperience";
 import Resume from "../../Reuseable/profile/Resume";
 import Skills from "../../Reuseable/profile/Skills";
@@ -10,6 +11,7 @@ const ProfileUser = () => {
       <Resume />
       <Skills />
       <EmploymentExperience />
+      <Education />
     </>
   );
 };

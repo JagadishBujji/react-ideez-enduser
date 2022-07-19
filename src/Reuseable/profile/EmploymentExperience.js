@@ -13,6 +13,8 @@ const EmploymentExperience = () => {
             <ExperienceModal />
           </div>
           <ExperienceCard />
+          <ExperienceCard />
+          <ExperienceCard />
         </div>
       </div>
     </>

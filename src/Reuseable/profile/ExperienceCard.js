@@ -5,7 +5,7 @@ const ExperienceCard = () => {
     <>
       <div className="mb-4">
         <p className="exp">
-          <b>Jagadish Kumar</b>
+          <b>Mortgage Associate</b>
           <span>
             <ExperienceEdit />{" "}
           </span>

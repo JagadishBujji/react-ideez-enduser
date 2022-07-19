@@ -1,10 +1,18 @@
 import $ from "jquery";
-import ProfileEditModal from "./ProfileEditModal";
+// import ProfileEditModal from "./ProfileEditModal";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import UploadButtons from "./UploadButtons";
 
 const Resume = () => {
+  const Add = {
+    fontSize: "16px",
+    fontWeight: "800",
+    color: "#eeb5eb",
+    "&:focus": {
+      outline: "none",
+    },
+  };
   return (
     <>
       <div className="row container m-auto">
@@ -25,6 +33,7 @@ const Resume = () => {
           <div className="delete">
             {/* <img src="/images/delete.png" alt="" className="download-img" /> */}
             <Button
+              sx={Add}
               size="large"
               // InputProps={{ style: { fontSize: 18 } }}
               // InputLabelProps={{ style: { fontSize: 18 } }}

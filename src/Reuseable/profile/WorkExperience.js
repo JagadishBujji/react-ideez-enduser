@@ -1,4 +1,4 @@
-import EditModal from "./EditModal";
+import EditModal from "./Modal/EditModal";
 import WorkDetails from "./WorkDetails";
 
 const WorkExperience = () => {

@@ -95,9 +95,10 @@ export default function ProfileEditModal() {
           <TextareaAutosize
             aria-label="minimum height"
             minRows={3}
-            placeholder="Description"
-            style={{ width: 634, padding: 10 }}
-            className="mb-5"
+            placeholder="Address"
+            style={{ width: 634, padding: "10px", borderRadius: "10px" }}
+            fullWidth
+            className="mb-5 text-left"
           />
           <TextField
             type="email"

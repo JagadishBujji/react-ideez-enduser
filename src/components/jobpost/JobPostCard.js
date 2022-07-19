@@ -29,7 +29,7 @@ const JobPostCard = () => {
   };
   return (
     <>
-      <div className="row container-fluid m-auto">
+      <div className="row container-fluid m-auto p-0">
         <div className="Card jobpost">
           <div className="row">
             <div className="col-md-3">

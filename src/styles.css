@@ -59,21 +59,34 @@ a {
   right: 0;
 }
 
-.nav-link {
-  padding: 10px;
-  /* color: #fff; */
-}
-
 .navbar-light .navbar-nav .nav-link {
   color: #000;
   margin: 0 20px;
+  padding: 10px;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus {
+.navbar-light .navbar-nav .nav-link:hover {
   color: #fff;
   background: var(--primay);
   border-radius: 50px;
+  text-decoration: none;
+}
+/* 
+.navbar-light .navbar-nav .nav-item {
+  margin: 0 20px;
+  padding: 10px;
+} */
+
+.activelink {
+  color: #fff;
+  background: var(--primay);
+  border-radius: 50px;
+  padding: 10px;
+  margin: 0 25px;
+}
+.activelink:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .fa-briefcase,
@@ -222,6 +235,11 @@ a {
     transform: scale(3);
     opacity: 0;
   }
+}
+
+.chat {
+  width: 50px;
+  height: 50px;
 }
 
 .out {

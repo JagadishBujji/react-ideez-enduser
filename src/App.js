@@ -8,6 +8,8 @@ import JobPosts from "./components/jobpost/JobPosts";
 import EventPosts from "./components/EventPost/EventPosts";
 import UserProfile from "./pages/UserProfile";
 import NetWorking from "./pages/NetWorking";
+import Chats from "./pages/Chats";
+
 export default function App() {
   return (
     <div className="App">
@@ -19,6 +21,7 @@ export default function App() {
           <Route path="event-post" element={<EventPosts />} />
           <Route path="user-profile" element={<UserProfile />} />
           <Route path="networking" element={<NetWorking />} />
+          <Route path="chats" element={<Chats />} />
         </Route>
       </Routes>
     </div>

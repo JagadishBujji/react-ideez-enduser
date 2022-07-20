@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import AccountMenu from "../.././src/Reuseable/AccountMenu";
 
 const Navbar = () => {
@@ -9,19 +9,19 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 ">
-          {/* <button class="btn-primary" onClick={open}>
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top py-4 ">
+          {/* <button className="btn-primary" onClick={open}>
               ☰
             </button> */}
-          <a class="navbar-brand" href="#/">
-            {/* <img src="images/logo.png" alt="" class="Logo-img"  /> */}
+          <a className="navbar-brand" href="#/">
+            {/* <img src="images/logo.png" alt="" className="Logo-img"  /> */}
             <h1>
               <b>IDEEZ</b>
             </h1>
           </a>
 
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -29,34 +29,63 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-center"
+            className="collapse navbar-collapse justify-content-center"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link class="nav-link font px-4" to="job-post">
-                  <i class="fas fa-briefcase mr-3"></i>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link  px-4" to="job-post">
+                  <i className="fas fa-briefcase mr-3"></i>
                   <b>Jobs</b>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link  about-nav px-4" to="event-post">
-                  <i class="fas fa-calendar mr-3"></i>
+              <li className="nav-item">
+                <Link className="nav-link px-4" to="event-post">
+                  <i className="fas fa-calendar mr-3"></i>
                   <b>Events</b>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link   px-4" to="user-profile">
-                  <i class="fas fa-user mr-3"></i>
+              {/* <li className="nav-item">
+                <Link className="nav-link   px-4" to="user-profile">
+                  <i className="fas fa-user mr-3"></i>
                   <b>Profile</b>
+                </Link>
+              </li> */}
+              <li className="nav-item">
+                <Link className="nav-link   px-4" to="networking">
+                  <i className="fas fa-user mr-3"></i>
+                  <b>NetWorking</b>
                 </Link>
               </li>
             </ul>
-            <div className="row nav-all">
-              <AccountMenu />
+            <div id="panel">
+              <div class="username">
+                {/* <h5>Jagadish Kumar</h5> */}
+
+                <div id="container-avatar">
+                  {/* <div id="badge">12</div> */}
+                  <img src="/images/profile.png" />
+                  <span class="entypo-menu"></span>
+
+                  <div class="avatar">
+                    <ul>
+                      <li>
+                        <a href="user-profile">
+                          <span class="entypo-cog"></span>Profile
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <span class="entypo-logout"></span>Logout
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </nav>

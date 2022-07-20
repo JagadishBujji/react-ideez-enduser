@@ -16,6 +16,16 @@ const style = {
   border: "2px solid #fff",
   boxShadow: 24,
   p: 2,
+  border: "none",
+  "@media (max-width:400px)": {
+    width: 300,
+    maxHeight: "500px",
+  },
+
+  "@media (min-width:1200px)": {
+    width: 800,
+    maxHeight: "700px",
+  },
 };
 
 const apply = {

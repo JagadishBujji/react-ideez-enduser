@@ -21,6 +21,16 @@ const style = {
   p: 4,
   maxHeight: "700px",
   overflowY: "scroll",
+  border: "none",
+  "@media (max-width:400px)": {
+    width: 300,
+    maxHeight: "500px",
+  },
+
+  "@media (min-width:1200px)": {
+    width: 800,
+    maxHeight: "700px",
+  },
 };
 
 const apply = {
@@ -105,14 +115,34 @@ export default function ExperienceModal() {
             <b>Experience</b>
             <Divider />
           </h1>
-          <TextField
+          <form class="profile-form">
+            <div className="row">
+              <div className="col-12 mb-3">
+                <label class="inp">
+                  <input type="text" class="input-text" placeholder="&nbsp;" />
+                  <span class="label">Current Designation</span>
+                  {/* <span class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                  </span> */}
+                </label>
+              </div>
+              <div className="col-12 mb-3">
+                <label class="inp">
+                  <input type="text" class="input-text" placeholder="&nbsp;" />
+                  <span class="label">Current Company Name</span>
+                  {/* <span class="input-icon input-icon-password" data-password>
+                    <i class="fas fa-eye"></i>
+                  </span> */}
+                </label>
+              </div>
+            </div>
+
+            {/* <TextField
             type="text"
             fullWidth
             id="outlined-basic"
             label="Current Designation"
-            // defaultValue="Normal"
             variant="outlined"
-            // size="Normal"
             className="mb-5"
             InputProps={{ style: { fontSize: 16 } }}
             InputLabelProps={{ style: { fontSize: 16 } }}
@@ -122,139 +152,163 @@ export default function ExperienceModal() {
             fullWidth
             id="outlined-basic"
             label="Current Company Name"
-            // defaultValue="Normal"
             variant="outlined"
-            // size="Normal"
             className="mb-5"
             InputProps={{ style: { fontSize: 16 } }}
             InputLabelProps={{ style: { fontSize: 16 } }}
-          />
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Is this your current company?</span>
-            </div>
-            <div className="col-4">
-              <div className="row pl-4">
-                <input type="radio" id="yes" name="fav_language" value="YES" />
-                <label className="mb-0 pl-2" for="yes">
-                  Yes
-                </label>
+          /> */}
+            <div className="row mb-3 profile-company">
+              <div className="col-12 mb-4">
+                <span>Is this your current company?</span>
+              </div>
+              <div className="col-4">
+                <div className="row pl-4">
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="fav_language"
+                    value="YES"
+                  />
+                  <label className="mb-0 pl-2" for="yes">
+                    Yes
+                  </label>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row">
+                  <input type="radio" id="no" name="fav_language" value="NO" />
+                  <label className="mb-0 pl-2" for="no">
+                    No
+                  </label>
+                </div>
               </div>
             </div>
-            <div className="col-4">
-              <div className="row">
-                <input type="radio" id="no" name="fav_language" value="NO" />
-                <label className="mb-0 pl-2" for="no">
-                  No
-                </label>
+            <div className="row mb-3 profile-company">
+              <div className="col-12 mb-4">
+                <span>Joining Date</span>
+              </div>
+              <div className="col-4">
+                <div className="row pl-4">
+                  <SelectOption />
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row pl-4">
+                  <SelectOption />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Joining Date</span>
-            </div>
-            <div className="col-4">
-              <div className="row pl-4">
-                <SelectOption />
+            <div className="row mb-3 profile-company">
+              <div className="col-12 mb-4">
+                <span>Current Annual Salary</span>
+              </div>
+              <div className="col-4">
+                <div className="row pl-4">
+                  <input
+                    type="radio"
+                    id="Indian"
+                    name="fav_language"
+                    value="indian"
+                  />
+                  <label className="mb-0 pl-2" for="Indian">
+                    Indian Rupees
+                  </label>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row">
+                  <input
+                    type="radio"
+                    id="Dollars"
+                    name="fav_language"
+                    value="dollars"
+                  />
+                  <label className="mb-0 pl-2" for="Dollars">
+                    Dollars
+                  </label>
+                </div>
               </div>
             </div>
-            <div className="col-4">
-              <div className="row pl-4">
-                <SelectOption />
+            <div className="col-12 mb-5">
+              <div className="row mb-5">
+                <div className="col-4">
+                  <div className="row pl-4">
+                    <SelectOption />
+                    {/* 2lac */}
+                  </div>
+                </div>
+                <div className="col-4">
+                  <div className="row pl-4">
+                    <SelectOption />
+                    {/* thousand */}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Current Annual Salary</span>
+            <div className="col-12 mb-5 p-0">
+              <label class="inp">
+                <input type="text" class="input-text" placeholder="&nbsp;" />
+                <span class="label">Skills used</span>
+                {/* <span class="input-icon input-icon-password" data-password>
+                    <i class="fas fa-eye"></i>
+                  </span> */}
+              </label>
             </div>
-            <div className="col-4">
-              <div className="row pl-4">
-                <input
-                  type="radio"
-                  id="Indian"
-                  name="fav_language"
-                  value="indian"
-                />
-                <label className="mb-0 pl-2" for="Indian">
-                  Indian Rupees
-                </label>
-              </div>
-            </div>
-            <div className="col-4">
-              <div className="row">
-                <input
-                  type="radio"
-                  id="Dollars"
-                  name="fav_language"
-                  value="dollars"
-                />
-                <label className="mb-0 pl-2" for="Dollars">
-                  Dollars
-                </label>
-              </div>
-            </div>
-          </div>
-          <div className="row mb-5">
-            <div className="col-4">
-              <div className="row pl-4">
-                <SelectOption />
-                {/* 2lac */}
-              </div>
-            </div>
-            <div className="col-4">
-              <div className="row pl-4">
-                <SelectOption />
-                {/* thousand */}
-              </div>
-            </div>
-          </div>
-          <TextField
+            {/* <TextField
             type="text"
             fullWidth
             id="outlined-basic"
             label="Skills used"
-            // defaultValue="Normal"
+            defaultValue="Normal"
             variant="outlined"
-            // size="Normal"
+            size="Normal"
             className="mb-5"
             InputProps={{ style: { fontSize: 16 } }}
             InputLabelProps={{ style: { fontSize: 16 } }}
-          />
-
-          <TextareaAutosize
-            aria-label="minimum height"
-            placeholder="Job Title"
-            minRows={3}
-            style={{
-              width: 615,
-              padding: "10px",
-              borderRadius: "5px",
-            }}
-            fullWidth
-            className="mb-5 text-left"
-          />
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Joining Date</span>
+          /> */}
+            {/* <span class="label">Job Title</span> */}
+            {/* <TextareaAutosize
+              aria-label="minimum height"
+              placeholder="Job Title"
+              minRows={3}
+              style={{
+                width: 615,
+                padding: "10px",
+                borderRadius: "5px",
+              }}
+              fullWidth
+              className="mb-5 text-left input-text"
+            /> */}
+            <label for="w3review">Job Title</label>
+            <textarea
+              id="w3review"
+              className="mb-5 text-left input-text"
+              name="w3review"
+              rows="4"
+              cols="50"
+              // placeholder="Job Title"
+            ></textarea>
+            <div className="row mb-5">
+              <div className="col-12 mb-4">
+                <span>Joining Date</span>
+              </div>
+              <div className="col-12 mb-4">
+                <SelectPeriod />
+              </div>
             </div>
-            <div className="col-12 mb-4">
-              <SelectPeriod />
+            {/* <SelectPeriod /> */}
+            <div className="row btnrow">
+              {/* <Button variant="outlined">View Applicant</Button> */}
+              <div className="job-button">
+                <Button sx={save} variant="outlined" className="mr-2">
+                  Cancel
+                </Button>
+                <Button sx={apply} variant="outlined">
+                  Save
+                </Button>
+              </div>
             </div>
-          </div>
-          {/* <SelectPeriod /> */}
-          <div className="row btnrow">
-            {/* <Button variant="outlined">View Applicant</Button> */}
-            <div className="job-button">
-              <Button sx={save} variant="outlined" className="mr-2">
-                Cancel
-              </Button>
-              <Button sx={apply} variant="outlined">
-                Save
-              </Button>
-            </div>
-          </div>
+          </form>
         </Box>
       </Modal>
     </div>

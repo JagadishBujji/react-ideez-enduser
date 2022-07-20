@@ -17,6 +17,16 @@ const style = {
   border: "2px solid #fff",
   boxShadow: 24,
   p: 4,
+  border: "none",
+  "@media (max-width:400px)": {
+    width: 300,
+    maxHeight: "530px",
+  },
+
+  "@media (min-width:1200px)": {
+    width: 800,
+    maxHeight: "700px",
+  },
 };
 
 const apply = {
@@ -56,6 +66,7 @@ export default function ProfileEditModal() {
         alt=""
         className="profile-edit"
       />
+
       <Modal
         open={open}
         onClose={handleClose}
@@ -67,14 +78,62 @@ export default function ProfileEditModal() {
             <b>Profile Edit</b>
             <Divider />
           </h1>
-          <TextField
+
+          <form class="profile-form">
+            <div className="row">
+              <div className="col-12 mb-5">
+                <label class="inp">
+                  <input type="text" class="input-text" placeholder="&nbsp;" />
+                  <span class="label">Name</span>
+                  {/* <span class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                  </span> */}
+                </label>
+              </div>
+              <div className="col-12 mb-5">
+                <label class="inp">
+                  <input type="text" class="input-text" placeholder="&nbsp;" />
+                  <span class="label">Location</span>
+                  {/* <span class="input-icon input-icon-password" data-password>
+                    <i class="fas fa-eye"></i>
+                  </span> */}
+                </label>
+              </div>
+              <div className="col-12 mb-5">
+                <label class="inp">
+                  <input type="text" class="input-text" placeholder="&nbsp;" />
+                  <span class="label">Description</span>
+                  {/* <span class="input-icon input-icon-password" data-password>
+                    <i class="fas fa-eye"></i>
+                  </span> */}
+                </label>
+              </div>
+              <div className="col-12 mb-5">
+                <label class="inp">
+                  <input type="email" class="input-text" placeholder="&nbsp;" />
+                  <span class="label">Email</span>
+                  {/* <span class="input-icon input-icon-password" data-password>
+                    <i class="fas fa-eye"></i>
+                  </span> */}
+                </label>
+              </div>
+              <div className="col-12 mb-5">
+                <label class="inp">
+                  <input type="tel" class="input-text" placeholder="&nbsp;" />
+                  <span class="label">Phone</span>
+                  {/* <span class="input-icon input-icon-password" data-password>
+                    <i class="fas fa-eye"></i>
+                  </span> */}
+                </label>
+              </div>
+            </div>
+          </form>
+          {/* <TextField
             type="text"
             fullWidth
             id="outlined-basic"
             label="Name"
-            // defaultValue="Normal"
             variant="outlined"
-            // size="Normal"
             className="mb-5"
             InputProps={{ style: { fontSize: 16 } }}
             InputLabelProps={{ style: { fontSize: 16 } }}
@@ -85,9 +144,7 @@ export default function ProfileEditModal() {
             fullWidth
             id="outlined-basic"
             label="Location"
-            // defaultValue="Normal"
             variant="outlined"
-            // size="Normal"
             className="mb-5"
             InputProps={{ style: { fontSize: 16 } }}
             InputLabelProps={{ style: { fontSize: 16 } }}
@@ -105,9 +162,7 @@ export default function ProfileEditModal() {
             fullWidth
             id="outlined-basic"
             label="Email"
-            // defaultValue="Normal"
             variant="outlined"
-            // size="Normal"
             className="mb-5"
             InputProps={{ style: { fontSize: 16 } }}
             InputLabelProps={{ style: { fontSize: 16 } }}
@@ -117,13 +172,11 @@ export default function ProfileEditModal() {
             fullWidth
             id="outlined-basic"
             label="Phone"
-            // defaultValue="Normal"
             variant="outlined"
-            // size="Normal"
             className="mb-5"
             InputProps={{ style: { fontSize: 16 } }}
             InputLabelProps={{ style: { fontSize: 16 } }}
-          />
+          /> */}
 
           <div className="row btnrow">
             {/* <Button variant="outlined">View Applicant</Button> */}

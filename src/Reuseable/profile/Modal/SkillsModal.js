@@ -18,6 +18,15 @@ const style = {
   border: "2px solid #fff",
   boxShadow: 24,
   p: 4,
+  "@media (max-width:400px)": {
+    width: 300,
+    maxHeight: "500px",
+  },
+
+  "@media (min-width:1200px)": {
+    width: 800,
+    maxHeight: "700px",
+  },
 };
 
 const apply = {
@@ -215,7 +224,7 @@ export default function SkillsModal() {
           </h1>
           <Autocomplete
             fullWidth
-            className="mb-5"
+            className="mb-5 searchselect"
             multiple
             limitTags={2}
             id="multiple-limit-tags"
@@ -231,7 +240,6 @@ export default function SkillsModal() {
                 // placeholder="Spelization"
               />
             )}
-            sx={{ width: "600px" }}
           />
           <div className="row btnrow">
             {/* <Button variant="outlined">View Applicant</Button> */}

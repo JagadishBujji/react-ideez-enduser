@@ -1,8 +1,8 @@
 const Search = () => {
   return (
     <>
-      <div className="container-fluid search px-5 py-5">
-        <h2>Search Jobs</h2>
+      <div className="container-fluid search px-2 py-2">
+        {/* <h2>Search Jobs</h2> */}
         <section>
           <form className="form" action="submit">
             {/* <label class="head-jobs" for="search">
@@ -15,7 +15,7 @@ const Search = () => {
                 type="text"
                 name="search"
                 id="search"
-                placeholder="skills, Companies...."
+                placeholder="Search Jobs...."
               />
             </div>
             <button className="sea" type="submit">

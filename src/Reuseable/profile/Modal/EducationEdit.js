@@ -21,6 +21,16 @@ const style = {
   p: 4,
   maxHeight: "700px",
   overflowY: "scroll",
+  border: "none",
+  "@media (max-width:400px)": {
+    width: 300,
+    maxHeight: "500px",
+  },
+
+  "@media (min-width:1200px)": {
+    width: 800,
+    maxHeight: "700px",
+  },
 };
 
 const apply = {
@@ -51,14 +61,14 @@ export default function EducationModal() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const Add = {
-    fontSize: "16px",
-    fontWeight: "800",
-    color: "#eeb5eb",
-    "&:focus": {
-      outline: "none",
-    },
-  };
+  // const Add = {
+  //   fontSize: "16px",
+  //   fontWeight: "800",
+  //   color: "#eeb5eb",
+  //   "&:focus": {
+  //     outline: "none",
+  //   },
+  // };
 
   const apply = {
     background: "#eeb5eb",
@@ -102,132 +112,107 @@ export default function EducationModal() {
       >
         <Box sx={style}>
           <h1 className="mb-4">
-            <b>Experience</b>
+            <b>Education</b>
             <Divider />
           </h1>
-          {/* <TextField
-            type="text"
-            fullWidth
-            id="outlined-basic"
-            label="Current Designation"
-            // defaultValue="Normal"
-            variant="outlined"
-            // size="Normal"
-            className="mb-5"
-            InputProps={{ style: { fontSize: 16 } }}
-            InputLabelProps={{ style: { fontSize: 16 } }}
-          /> */}
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Education</span>
-            </div>
-            <div className="col-12 mb-4">
-              <SelectPeriod />
-            </div>
-          </div>
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Course</span>
-            </div>
-            <div className="col-12 mb-4">
-              <SelectPeriod />
-            </div>
-          </div>
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Specialization</span>
-            </div>
-            <div className="col-12 mb-4">
-              <SelectPeriod />
-            </div>
-          </div>
-          <TextField
-            type="text"
-            fullWidth
-            id="outlined-basic"
-            label="University/Institute"
-            // defaultValue="Normal"
-            variant="outlined"
-            // size="Normal"
-            className="mb-5"
-            InputProps={{ style: { fontSize: 16 } }}
-            InputLabelProps={{ style: { fontSize: 16 } }}
-          />
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Course Type</span>
-            </div>
-            <div className="col-4">
-              <div className="row pl-4">
-                <input
-                  type="radio"
-                  id="full"
-                  name="fav_language"
-                  value="FULL"
-                />
-                <label className="mb-0 pl-2" for="full">
-                  Full-Time
-                </label>
+          <form class="profile-form">
+            <div className="row mb-5">
+              <div className="col-12 mb-4">
+                <span>Education</span>
               </div>
-            </div>
-            <div className="col-4">
-              <div className="row">
-                <input
-                  type="radio"
-                  id="Part"
-                  name="fav_language"
-                  value="PART"
-                />
-                <label className="mb-0 pl-2" for="Part">
-                  Part-Time
-                </label>
-              </div>
-            </div>
-            <div className="col-4">
-              <div className="row">
-                <input
-                  type="radio"
-                  id="Part"
-                  name="fav_language"
-                  value="PART"
-                />
-                <label className="mb-0 pl-2" for="Part">
-                  FreeLance
-                </label>
-              </div>
-            </div>
-          </div>
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Passing Out Year</span>
-            </div>
-            <div className="col-6">
-              <div className="row pl-4">
+              <div className="col-12 mb-4">
                 <SelectPeriod />
               </div>
             </div>
-          </div>
+            <div className="row mb-5">
+              <div className="col-12 mb-4">
+                <span>Course</span>
+              </div>
+              <div className="col-12 mb-4">
+                <SelectPeriod />
+              </div>
+            </div>
+            <div className="row mb-5">
+              <div className="col-12 mb-4">
+                <span>Specialization</span>
+              </div>
+              <div className="col-12 mb-4">
+                <SelectPeriod />
+              </div>
+            </div>
+            <div className="col-12 mb-3 p-0">
+              <label class="inp">
+                <input type="text" class="input-text" placeholder="&nbsp;" />
+                <span class="label">University/Institute</span>
+                {/* <span class="input-icon input-icon-password" data-password>
+                    <i class="fas fa-eye"></i>
+                  </span> */}
+              </label>
+            </div>
+            <div className="row mb-3 profile-company">
+              <div className="col-12 mb-4">
+                <span>Course Type</span>
+              </div>
+              <div className="col-4">
+                <div className="row pl-4">
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="fav_language"
+                    value="YES"
+                  />
+                  <label className="mb-0 pl-2" for="yes">
+                    Full-Time
+                  </label>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row">
+                  <input type="radio" id="no" name="fav_language" value="NO" />
+                  <label className="mb-0 pl-2" for="no">
+                    Part-Time
+                  </label>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row">
+                  <input type="radio" id="no" name="fav_language" value="NO" />
+                  <label className="mb-0 pl-2" for="no">
+                    FreeLance
+                  </label>
+                </div>
+              </div>
+            </div>
 
-          <div className="row mb-5">
-            <div className="col-12 mb-4">
-              <span>Grading System</span>
+            <div className="row mb-5">
+              <div className="col-12 mb-4">
+                <span>Passing Out Year</span>
+              </div>
+              <div className="col-12 mb-4">
+                <SelectPeriod />
+              </div>
             </div>
-            <div className="col-12 mb-4">
-              <SelectPeriod />
+            <div className="row mb-5">
+              <div className="col-12 mb-4">
+                <span>Grading System</span>
+              </div>
+              <div className="col-12 mb-4">
+                <SelectPeriod />
+              </div>
             </div>
-          </div>
-          {/* <SelectPeriod /> */}
-          <div className="row btnrow">
-            {/* <Button variant="outlined">View Applicant</Button> */}
-            <div className="job-button">
-              <Button sx={save} variant="outlined" className="mr-2">
-                Cancel
-              </Button>
-              <Button sx={apply} variant="outlined">
-                Save
-              </Button>
+            {/* <SelectPeriod /> */}
+            <div className="row btnrow">
+              {/* <Button variant="outlined">View Applicant</Button> */}
+              <div className="job-button">
+                <Button sx={save} variant="outlined" className="mr-2">
+                  Cancel
+                </Button>
+                <Button sx={apply} variant="outlined">
+                  Save
+                </Button>
+              </div>
             </div>
-          </div>
+          </form>
         </Box>
       </Modal>
     </div>

@@ -268,6 +268,8 @@ a {
   width: 100%;
   height: auto;
   margin-right: 10px;
+  border-radius: 50%;
+  background: #f2f2f2;
 }
 
 .btnrow {
@@ -275,6 +277,13 @@ a {
   justify-content: end;
   align-items: center;
   width: 100%;
+}
+.btnrow1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
 .edit {
@@ -977,10 +986,10 @@ section {
 }
 .whatsapp_main_sidemenu_middle i.fa-search {
   position: absolute;
-  bottom: 54px;
-  left: 34px;
+  top: 58px;
+  left: 37px;
   transform: translate(0%, 100%);
-  font-size: 12px;
+  font-size: 20px;
   color: gray;
 }
 .whatsapp_main_sidemenu_middle input {
@@ -1060,7 +1069,7 @@ section {
   list-style-type: none;
   margin-top: 10px;
   padding: 18px;
-  max-height: 500px;
+  max-height: 425px;
   overflow-y: scroll;
 }
 
@@ -1137,6 +1146,19 @@ section {
   margin-left: 10px;
 }
 
+.message {
+  border-radius: 30px;
+  border: 1px solid var(--primay);
+  padding: 5px 50px;
+  box-shadow: 0px 0px 20px -15px #000;
+}
+
+.message::placeholder {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
 @media only screen and (max-width: 800px) {
   .whatsapp_main_body {
     display: none;
@@ -1201,7 +1223,7 @@ section {
     width: 100%;
   }
   .out {
-    padding-top: 95px;
+    padding-top: 110px;
   }
   .ass {
     width: 10%;

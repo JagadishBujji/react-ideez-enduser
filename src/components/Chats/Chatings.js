@@ -432,12 +432,13 @@ const Chatings = () => {
               </ul>
             </div>
             <div className="whatsapp_main_sidemenu_middle">
-              <i className="fa fa-search"></i>
+              {/* <i className="fa fa-search"></i> */}
               <textarea
-                className="w-100"
+                className="w-100 message"
                 type="text"
                 name="text"
                 placeholder="Message"
+                rows="2"
               />
               <a href="" className="send">
                 send

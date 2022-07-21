@@ -431,8 +431,10 @@ const Chatings = () => {
                 </div>
               </ul>
             </div>
+
             <div className="whatsapp_main_sidemenu_middle">
-              {/* <i className="fa fa-search"></i> */}
+              <img src="/images/smile.png" className="smile" alt="" />
+              <img src="/images/clip.png" className="smile" alt="" />
               <textarea
                 className="w-100 message"
                 type="text"

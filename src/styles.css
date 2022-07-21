@@ -981,7 +981,7 @@ section {
   padding: 10px 5px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: justify;
 }
 .whatsapp_main_sidemenu_middle i.fa-search {
@@ -1147,9 +1147,9 @@ section {
 }
 
 .message {
-  border-radius: 30px;
+  border-radius: 10px;
   border: 1px solid var(--primay);
-  padding: 5px 50px;
+  padding: 5px 20px;
   box-shadow: 0px 0px 20px -15px #000;
 }
 
@@ -1157,6 +1157,12 @@ section {
   display: flex;
   text-align: left;
   align-items: center;
+}
+
+.smile {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
 }
 
 @media only screen and (max-width: 800px) {

@@ -1,5 +1,11 @@
+import Chatings from "../components/Chats/Chatings";
+
 const Chats = () => {
-  return <>chat</>;
+  return (
+    <>
+      <Chatings />
+    </>
+  );
 };
 
 export default Chats;

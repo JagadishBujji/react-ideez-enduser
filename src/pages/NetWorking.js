@@ -1,9 +1,10 @@
-import NetWorkingCard from "../components/Networking/NetWorkingCard";
+// import NetWorkingCard from "../components/Networking/NetWorkingCard";
+import NetWorkingMedia from "../components/Networking/NetWorkingMedia";
 
 const NetWorking = () => {
   return (
     <>
-      <NetWorkingCard />
+      <NetWorkingMedia />
     </>
   );
 };

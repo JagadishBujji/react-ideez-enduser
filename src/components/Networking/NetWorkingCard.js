@@ -8,6 +8,7 @@ const NetWorkingCard = () => {
     border: "1px solid #eeb5eb",
     fontSize: "14px",
     fontWeight: "600",
+    borderRadius: "20px",
     "&:hover": {
       background: "#eeb5eb",
       color: "#fff",
@@ -19,6 +20,7 @@ const NetWorkingCard = () => {
     border: "1px solid #eeb5eb",
     fontSize: "14px",
     fontWeight: "600",
+    borderRadius: "20px",
     "&:hover": {
       border: "1px solid #c26dbc",
       color: "#c26dbc",
